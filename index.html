@@ -12,31 +12,118 @@
 <ul>
    <li class='active'><a  href='#'><span>应用TOP10</span></a></li>
    <li class='has-sub'><a href='#'><span>服务</span></a>
-      <ul>
-         <li class='has-sub'><a href='#'><span>行业</span></a>
-            <ul>
-               <li><a href='#'><span>家电</span></a></li>
-               <li class='last'><a href='#'><span>IT</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>领域</span></a>
-            <ul>
-               <li><a href='#'><span>Sub Product</span></a></li>
-               <li class='last'><a href='#'><span>Sub Product</span></a></li>
-            </ul>
-         </li>
-         <li class='has-sub'><a href='#'><span>业务分类</span></a>
-            <ul>
-               <li><a href='#'><span>Sub Product</span></a></li>
-               <li class='last'><a href='#'><span>Sub Product</span></a></li>
-            </ul>
-         </li>
+      <ul id="service">
+         
       </ul>
    </li>
    <li><a href='#'><span>数据</span></a></li>
    <li class='last'><a href='#'><span>分析</span></a></li>
 </ul>
 </div>
+<script type="text/javascript">
+$(function(){
 
+   window.onload = function() {
+
+      $.getJSON("category.json",
+         
+         function(data) {
+            if(data) {
+               buildDropdownMenu(data);
+         }        
+         
+      });
+
+   }
+
+   function buildDropdownMenu (data) {
+
+      SeparateGeneration(data);
+      buildParentsArray();
+      buildChildrenArray();
+      traverse2DArray();
+
+   }
+
+
+   var parents = [];
+   var children = [];
+   var categoryIds = []; // parentId为0的那些id
+   var _2DArray = []; // 存放子菜单的二维数组
+   function SeparateGeneration(data) {
+     $.each(data.category,function(index,item){ 
+      var node = {};
+      if(item.parentId==0){
+         node.id = item.id;
+         node.parentId = 0;
+         node.displayName = item.name;
+         parents.push(node);
+         categoryIds.push(item.id);
+      } else {
+         node.parentId = item.parentId;
+
+         var dName = item.displayName;
+         if (-1 != dName.lastIndexOf("(")) {
+            node.displayName  = dName.substring(0, dName.lastIndexOf("("));
+         } else {
+            node.displayName = dName;
+         }
+         node.cateGory = item.cateGory;
+         children.push(node);
+      }
+     });
+   }
+
+   /* 创建一级菜单 */
+   function buildParentsArray() {
+     $.each(parents, function(index,item){
+       $("#service").append("<li class='has-sub' id="+item.id+"><a href='#'><span>"+item.displayName+"</span></a></li>");
+     })
+   }
+
+
+   function buildChildrenArray() {
+     //////////////////////////////
+     // traverse categoryIds array  //
+     //////////////////////////////
+     $.each(categoryIds, function(index,item){
+       var array = [];
+       array.push(item);
+       $.each(children, function(index,child){
+         if (item == child.parentId) {
+           array.push(child);
+         }
+       });
+       _2DArray.push(array);
+     });
+
+   }
+
+
+   /* 将二级子菜单加入一级菜单下 */
+   function traverse2DArray() {
+     for (var i = 0; i < _2DArray.length; i++) {
+       var whichCategory = _2DArray[i][0];
+       addChildrenToParents(whichCategory, _2DArray[i]);
+     };
+   }
+
+   /* 将二维数组中的每一个一维数组添加到子菜单中，
+    * 另，每一个一维数组中的第一个元素是目录的id属性
+    */
+   function addChildrenToParents(cgId, arr) {
+     var len = arr.length;
+     var doms = "<ul>";
+     for (var cnt = 1; cnt < len; cnt++) {
+       doms += "<li><a href='#'><span>"+arr[cnt].displayName+"</span></a></li>";
+     }
+     doms += "</ul>";
+
+     $("#service").children().filter("[id = "+cgId+"]").append(doms);           
+   }
+
+
+});
+</script>
 </body>
 <html>

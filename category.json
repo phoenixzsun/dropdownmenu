@@ -1,0 +1,351 @@
+{
+  "category" : [ {
+    "id" : 3,
+    "parentId" : 0,
+    "preflex" : "m3",
+    "name" : "行业",
+    "cateGory" : "TODO.INDUSTRY.ID",
+    "leaf" : false,
+    "type" : -1,
+    "url" : ""
+  }, {
+    "id" : 919,
+    "parentId" : 3,
+    "preflex" : "f919",
+    "name" : "家电",
+    "cateGory" : "TODO.INDUSTRY.ID",
+    "leaf" : true,
+    "code" : "3",
+    "type" : -1,
+    "displayName" : "家电(200)",
+    "url" : ""
+  }, {
+    "id" : 917,
+    "parentId" : 3,
+    "preflex" : "f917",
+    "name" : "IT",
+    "cateGory" : "TODO.INDUSTRY.ID",
+    "leaf" : true,
+    "code" : "1",
+    "type" : -1,
+    "displayName" : "IT(1323)",
+    "url" : ""
+  }, {
+    "id" : 1,
+    "parentId" : 0,
+    "preflex" : "m1",
+    "name" : "领域",
+    "cateGory" : "TODO.BUSINESS_DOMAIN_ID",
+    "leaf" : false,
+    "type" : -1,
+    "url" : ""
+  }, {
+    "id" : 909,
+    "parentId" : 1,
+    "preflex" : "f909",
+    "name" : "业务领域-生产",
+    "cateGory" : "TODO.BUSINESS_DOMAIN_ID",
+    "leaf" : true,
+    "code" : "9",
+    "type" : -1,
+    "displayName" : "业务领域-生产(4)",
+    "url" : ""
+  }, {
+    "id" : 908,
+    "parentId" : 1,
+    "preflex" : "f908",
+    "name" : "物流",
+    "cateGory" : "TODO.BUSINESS_DOMAIN_ID",
+    "leaf" : true,
+    "code" : "8",
+    "type" : -1,
+    "displayName" : "物流(118)",
+    "url" : ""
+  }, {
+    "id" : 903,
+    "parentId" : 1,
+    "preflex" : "f903",
+    "name" : "主数据",
+    "cateGory" : "TODO.BUSINESS_DOMAIN_ID",
+    "leaf" : true,
+    "code" : "3",
+    "type" : -1,
+    "displayName" : "主数据(9)",
+    "url" : ""
+  }, {
+    "id" : 902,
+    "parentId" : 1,
+    "preflex" : "f902",
+    "name" : "业务领域-IT管理",
+    "cateGory" : "TODO.BUSINESS_DOMAIN_ID",
+    "leaf" : true,
+    "code" : "2",
+    "type" : -1,
+    "displayName" : "业务领域-IT管理(1323)",
+    "url" : ""
+  }, {
+    "id" : 915,
+    "parentId" : 1,
+    "preflex" : "f915",
+    "name" : "销售",
+    "cateGory" : "TODO.BUSINESS_DOMAIN_ID",
+    "leaf" : true,
+    "code" : "15",
+    "type" : -1,
+    "displayName" : "销售(51)",
+    "url" : ""
+  }, {
+    "id" : 910,
+    "parentId" : 1,
+    "preflex" : "f910",
+    "name" : "研发",
+    "cateGory" : "TODO.BUSINESS_DOMAIN_ID",
+    "leaf" : true,
+    "code" : "10",
+    "type" : -1,
+    "displayName" : "研发(18)",
+    "url" : ""
+  }, {
+    "id" : 2,
+    "parentId" : 0,
+    "preflex" : "m2",
+    "name" : "业务分类",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : false,
+    "type" : -1,
+    "url" : ""
+  }, {
+    "id" : 964,
+    "parentId" : 2,
+    "preflex" : "f964",
+    "name" : "SOM（销售订单管理）",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : true,
+    "code" : "42",
+    "type" : -1,
+    "displayName" : "SOM（销售订单管理）(51)",
+    "url" : ""
+  }, {
+    "id" : 957,
+    "parentId" : 2,
+    "preflex" : "f957",
+    "name" : "PLM（产品生命周期管理）",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : true,
+    "code" : "35",
+    "type" : -1,
+    "displayName" : "PLM（产品生命周期管理）(18)",
+    "url" : ""
+  }, {
+    "id" : 951,
+    "parentId" : 2,
+    "preflex" : "f951",
+    "name" : "MES（制造执行系统）",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : true,
+    "code" : "29",
+    "type" : -1,
+    "displayName" : "MES（制造执行系统）(4)",
+    "url" : ""
+  }, {
+    "id" : 950,
+    "parentId" : 2,
+    "preflex" : "f950",
+    "name" : "MDM（主数据管理）",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : true,
+    "code" : "28",
+    "type" : -1,
+    "displayName" : "MDM（主数据管理）(9)",
+    "url" : ""
+  }, {
+    "id" : 947,
+    "parentId" : 2,
+    "preflex" : "f947",
+    "name" : "ITSM（IT服务管理）",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : true,
+    "code" : "25",
+    "type" : -1,
+    "displayName" : "ITSM（IT服务管理）(62)",
+    "url" : ""
+  }, {
+    "id" : 940,
+    "parentId" : 2,
+    "preflex" : "f940",
+    "name" : "ESB（企业服务总线）",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : true,
+    "code" : "18",
+    "type" : -1,
+    "displayName" : "ESB（企业服务总线）(1261)",
+    "url" : ""
+  }, {
+    "id" : 935,
+    "parentId" : 2,
+    "preflex" : "f935",
+    "name" : "E-Hub（电子商务枢纽）",
+    "cateGory" : "TODO.BUSINESS_TYPE_ID",
+    "leaf" : true,
+    "code" : "13",
+    "type" : -1,
+    "displayName" : "E-Hub（电子商务枢纽）(118)",
+    "url" : ""
+  }, {
+    "id" : 5,
+    "parentId" : 0,
+    "preflex" : "m5",
+    "name" : "移动SDK",
+    "leaf" : false,
+    "type" : -1,
+    "url" : ""
+  }, {
+    "id" : 1,
+    "parentId" : 5,
+    "preflex" : "f1",
+    "name" : "IOS",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 1,
+    "type" : 4,
+    "displayName" : "IOS",
+    "url" : ""
+  }, {
+    "id" : 2,
+    "parentId" : 5,
+    "preflex" : "f2",
+    "name" : "ANDROID",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 2,
+    "type" : 4,
+    "displayName" : "ANDROID",
+    "url" : ""
+  }, {
+    "id" : 3,
+    "parentId" : 5,
+    "preflex" : "f3",
+    "name" : "WINDOWPHONE",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 3,
+    "type" : 4,
+    "displayName" : "WINDOWPHONE",
+    "url" : ""
+  }, {
+    "id" : 4,
+    "parentId" : 0,
+    "preflex" : "m4",
+    "name" : "标签",
+    "leaf" : false,
+    "type" : -1,
+    "url" : ""
+  }, {
+    "id" : 24,
+    "parentId" : 4,
+    "preflex" : "f24",
+    "name" : "1169",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 24,
+    "type" : -1,
+    "displayName" : "1169(142)",
+    "url" : ""
+  }, {
+    "id" : 27,
+    "parentId" : 4,
+    "preflex" : "f27",
+    "name" : "690",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 27,
+    "type" : -1,
+    "displayName" : "690(7)",
+    "url" : ""
+  }, {
+    "id" : 31,
+    "parentId" : 4,
+    "preflex" : "f31",
+    "name" : "系统",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 31,
+    "type" : -1,
+    "displayName" : "系统(6)",
+    "url" : ""
+  }, {
+    "id" : 38,
+    "parentId" : 4,
+    "preflex" : "f38",
+    "name" : "DUBBO",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 38,
+    "type" : -1,
+    "displayName" : "DUBBO(105)",
+    "url" : ""
+  }, {
+    "id" : 39,
+    "parentId" : 4,
+    "preflex" : "f39",
+    "name" : "HOP4.0",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 39,
+    "type" : -1,
+    "displayName" : "HOP4.0(99)",
+    "url" : ""
+  }, {
+    "id" : 40,
+    "parentId" : 4,
+    "preflex" : "f40",
+    "name" : "EAI",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 40,
+    "type" : -1,
+    "displayName" : "EAI(1261)",
+    "url" : ""
+  }, {
+    "id" : 42,
+    "parentId" : 4,
+    "preflex" : "f42",
+    "name" : "1169_4.0",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 42,
+    "type" : -1,
+    "displayName" : "1169_4.0(13)",
+    "url" : ""
+  }, {
+    "id" : 43,
+    "parentId" : 4,
+    "preflex" : "f43",
+    "name" : "SDK",
+    "cateGory" : "SERVERLABEL.SERVERID",
+    "leaf" : true,
+    "code" : 43,
+    "type" : -1,
+    "displayName" : "SDK(1)",
+    "url" : ""
+  }, {
+    "id" : 6,
+    "parentId" : 0,
+    "preflex" : "m6",
+    "name" : "报表",
+    "leaf" : false,
+    "type" : -1,
+    "url" : ""
+  }, {
+    "id" : 612,
+    "parentId" : 6,
+    "preflex" : "f612",
+    "name" : "月度价值",
+    "cateGory" : "",
+    "leaf" : true,
+    "code" : "",
+    "type" : -1,
+    "displayName" : "API平台月度价值报表",
+    "url" : ""
+  } ]
+}
